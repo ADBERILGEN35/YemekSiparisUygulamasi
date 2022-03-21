@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "517803320597",
+    "project_id": "doyuyo",
+    "storage_bucket": "doyuyo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517803320597:android:8cd1c2af742ff816ea751c",
+        "android_client_info": {
+          "package_name": "com.example.yemeksiparis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "517803320597-p622lqq0fp5e9vi5rmffscgragmqq6pl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBO2OW7yqiOXuJ1gXgdQPM9QY69259BfrE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "517803320597-p622lqq0fp5e9vi5rmffscgragmqq6pl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1",
+
+
+}
+

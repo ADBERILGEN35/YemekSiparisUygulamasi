@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/acilisFragment">
+    <fragment
+        android:id="@+id/acilisFragment"
+        android:name="com.example.yemeksiparis.fragment.AcilisFragment"
+        android:label="AcilisFragment" >
+        <action
+            android:id="@+id/acilisKayitGecis"
+            app:destination="@id/kayitFragment" />
+        <action
+            android:id="@+id/acilisGirisGecis"
+            app:destination="@id/girisFragment" />
+        <action
+            android:id="@+id/acilisAnasayfaGecis"
+            app:destination="@id/anasayfaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kayitFragment"
+        android:name="com.example.yemeksiparis.fragment.KayitFragment"
+        android:label="KayitFragment" >
+        <action
+            android:id="@+id/kayitGirisGecis"
+            app:destination="@id/girisFragment" />
+        <action
+            android:id="@+id/kayitAnasayfaGecis"
+            app:destination="@id/anasayfaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/girisFragment"
+        android:name="com.example.yemeksiparis.fragment.GirisFragment"
+        android:label="GirisFragment" >
+        <action
+            android:id="@+id/girisAnasayfaGecis"
+            app:destination="@id/anasayfaFragment" />
+        <action
+            android:id="@+id/girisKayitGecis"
+            app:destination="@id/kayitFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/anasayfaFragment"
+        android:name="com.example.yemeksiparis.fragment.AnasayfaFragment"
+        android:label="AnasayfaFragment" >
+        <action
+            android:id="@+id/yemekDetayGecis"
+            app:destination="@id/yemekDetayFragment" />
+        <action
+            android:id="@+id/sepetGecis"
+            app:destination="@id/sepetFragment" />
+        <action
+            android:id="@+id/profilGecis"
+            app:destination="@id/profilFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/yemekDetayFragment"
+        android:name="com.example.yemeksiparis.fragment.YemekDetayFragment"
+        android:label="YemekDetayFragment" >
+        <argument
+            android:name="yemek"
+            app:argType="com.example.yemeksiparis.entity.Yemekler" />
+    </fragment>
+    <fragment
+        android:id="@+id/sepetFragment"
+        android:name="com.example.yemeksiparis.fragment.SepetFragment"
+        android:label="SepetFragment" />
+    <fragment
+        android:id="@+id/profilFragment"
+        android:name="com.example.yemeksiparis.fragment.ProfilFragment"
+        android:label="fragment_profil"
+        tools:layout="@layout/fragment_profil" >
+        <action
+            android:id="@+id/profilGuncellemeGecis"
+            app:destination="@id/profilGuncellemeFragment" />
+        <action
+            android:id="@+id/sifreDegistirneGecis"
+            app:destination="@id/sifreDegisimFragment" />
+        <action
+            android:id="@+id/profilGirisGecis"
+            app:destination="@id/acilisFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilGuncellemeFragment"
+        android:name="com.example.yemeksiparis.fragment.ProfilGuncellemeFragment"
+        android:label="fragment_profil_guncelleme"
+        tools:layout="@layout/fragment_profil_guncelleme" />
+    <fragment
+        android:id="@+id/sifreDegisimFragment"
+        android:name="com.example.yemeksiparis.fragment.SifreDegisimFragment"
+        android:label="fragment_sifre_degisim"
+        tools:layout="@layout/fragment_sifre_degisim" />
+</navigation>
