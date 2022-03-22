@@ -1,5 +1,5 @@
 # Yemek Sipariş Uygulaması
-Android-Kotlin ile yazılmış yemek sipariş uygulamasıdır.
+MVVM mimarisi baz alınarak Android-Kotlin ile yazılmış yemek sipariş uygulamasıdır.
 
 ## Kullanılan Kütüphaneler
 • Navigation Component
